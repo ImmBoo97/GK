@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" /> <!-- reset css -->
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<style>
+    body{ background-color: skyblue; }
+    canvas{border:5px solid black;}
+</style>
+<script>
+$(function(){
+
+    var canvas=document.getElementById("canvas");
+    var ctx=canvas.getContext("2d");
+
+    function drawStar(cx,cy,spikes,outerRadius,innerRadius){
+      var rot=Math.PI/2*3;
+      var x=cx;
+      var y=cy;
+      var step=Math.PI/spikes;
+
+      ctx.beginPath();
+      ctx.moveTo(cx,cy-outerRadius)
+      for(i=0;i<spikes;i++){
+        x=cx+Math.cos(rot)*outerRadius;
+        y=cy+Math.sin(rot)*outerRadius;
+        ctx.lineTo(x,y)
+        rot+=step
+
+        x=cx+Math.cos(rot)*innerRadius;
+        y=cy+Math.sin(rot)*innerRadius;
+        ctx.lineTo(x,y)
+        rot+=step
+      }
+      ctx.lineTo(cx,cy-outerRadius);
+      ctx.closePath();
+      ctx.lineWidth=3.7;
+      //ctx.strokeStyle='black';
+      ctx.stroke();
+      ctx.fillStyle='yellow';
+      ctx.fill();
+    }
+
+    drawStar(250,250,5,120,50);
+	
+
+	
+	
+
+	ctx.moveTo(225,275);
+    ctx.bezierCurveTo(250,295,250,300,280,275);
+    ctx.moveTo(225,275);
+    ctx.bezierCurveTo(250,285,250,290,280,275);
+	ctx.moveTo(225,275);
+    ctx.bezierCurveTo(250,285,250,297,280,275);
+	ctx.moveTo(225,275);
+    ctx.bezierCurveTo(250,285,247,299,280,275);
+    ctx.stroke();
+	
+	ctx.fillStyle='white';
+	ctx.fillRect(247,281,5,5)
+	ctx.fillRect(253,281,5,5)
+	
+	
+	ctx.beginPath();
+	ctx.lineWidth=3;
+	ctx.strokeStyle='white';
+    ctx.arc(270, 225, 7, 0, 2 * Math.PI);
+    ctx.stroke();
+	
+	ctx.beginPath();
+	ctx.lineWidth=3;
+	ctx.strokeStyle='white';
+    ctx.arc(235, 225, 7, 0, 2 * Math.PI);
+    ctx.stroke();
+	
+	ctx.beginPath();
+	ctx.lineWidth=3;
+	ctx.strokeStyle='black';
+    ctx.arc(235, 225, 4, 0, 2 * Math.PI);
+    ctx.stroke();
+	
+	ctx.beginPath();
+	ctx.lineWidth=3;
+	ctx.strokeStyle='black';
+    ctx.arc(270, 225, 4, 0, 2 * Math.PI);
+    ctx.stroke();
+	
+	
+	
+	ctx.beginPath();
+	ctx.lineWidth=4;
+	ctx.strokeStyle='black';
+    ctx.arc(271, 225, 2, 0, 2 * Math.PI);
+    ctx.stroke();
+	
+	ctx.beginPath();
+	ctx.lineWidth=4;
+	ctx.strokeStyle='black';
+    ctx.arc(236, 225, 2, 0, 2 * Math.PI);
+    ctx.stroke();
+
+    ctx.fillStyle='white';
+	ctx.fillRect(232,222,2,2)
+	ctx.fillRect(267,222,2,2)
+
+});
+
+
+
+</script>
+</head>
+<body>
+    <canvas id="canvas" width=600 height=600></canvas>
+</body>
+</html>
