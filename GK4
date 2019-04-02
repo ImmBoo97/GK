@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="600px" height="600px"
+viewBox="0 0 2 1"
+
+preserveAspectRatio="xMidYMid">
+
+<defs>
+    <g id="poll">
+    
+<polygon points="1.4874639560909118,0.6112604669781573 1.3909157412340147,0.8117449009293668 1.216941869558779,0.9504844339512095 1,1 0.783058130441221,0.9504844339512095 0.609084258765985,0.8117449009293667 0.5125360439090882,0.6112604669781573 0.5125360439090882,0.38873953302184283 0.609084258765985,0.1882550990706333 0.7830581304412213,0.04951556604879026 1.0000000000000004,0 1.216941869558779,0.04951556604879037 1.3909157412340147,0.18825509907063315 1.4874639560909118,0.38873953302184266" />
+    
+    </g>
+</defs>
+
+        <animateTransform xlink:href="#poll" attributeName = "transform" type="rotate"
+        from = "0, 1, 0.5 " to = "360, 1, 0.5 " dur = "5s"
+        repeatCount = "indefinite" />
+
+<defs>
+    <g id="obj">
+    <use xlink:href = "#poll" transform="translate(0.28, -0.01) scale(0.3)">
+    </use>
+    
+    
+    <use xlink:href = "#poll" transform="translate(1.37, 0.4) scale(0.3)" />
+    
+    <rect x="0.5" y="0.3" width="1.2" height="0.07" fill="red" transform="rotate(21, 1.1, 0.4)"/>
+    </g>
+    
+</defs>
+
+<use xlink:href = "#obj" transform=" translate(0.2, 0) scale(0.7)"/>
+<polygon points="1.1, 0.35, 1,1 1.2,1" fill="blue" stroke="green" stroke-width="0.002" transform="translate(0.2, 0) scale(0.7)"/>
+
+<use xlink:href = "#obj" transform="translate(-0.2, -0.4) scale(0.5)"/>
+<polygon points="1.1, 0.35, 1,1 1.2,1" fill="purple" stroke="green" stroke-width="0.002" transform="translate(-0.2, -0.4) scale(0.5) "/>
+
+<use xlink:href = "#obj" transform="translate(0.8, -0.35) scale(0.4)"/>
+<polygon points="1.1, 0.35, 1,1 1.2,1" fill="green" stroke="green" stroke-width="0.002" transform="translate(0.8, -0.35) scale(0.4) "/>
+
+</svg>
