@@ -121,7 +121,7 @@ public class lab5 extends GLJPanel implements GLEventListener, KeyListener{
 	public void Added_Poligon(GL2 gl2, double size)
 	{
 		gl2.glScaled(size,size,size);
-		Podstawa(gl2 , 8 , 5);	
+		Podstawa(gl2 , 14 , 5);	
 		gl2.glPushMatrix();
 		Triangle(gl2,0.0f, 1.0f, 0.0f );//zielony
 		gl2.glPushMatrix();
@@ -129,46 +129,83 @@ public class lab5 extends GLJPanel implements GLEventListener, KeyListener{
 		gl2.glPopMatrix();
 		
 		gl2.glPushMatrix();
-		gl2.glRotated(45, 0, 1, 0);
+		gl2.glRotated(25.71, 0, 1, 0);
 		gl2.glTranslated(0,0,0);
 		Triangle(gl2,1.0f, 0.0f, 0.0f );//czerwony
 		gl2.glPopMatrix();
 		
 		gl2.glPushMatrix();
-		gl2.glRotated(90, 0, 1, 0);
+		gl2.glRotated(51.42, 0, 1, 0);
 		gl2.glTranslated(0,0,0);
 		Triangle(gl2,0.0f, 0.0f, 1.0f );// niebieski
 		gl2.glPopMatrix();
 		
 		gl2.glPushMatrix();
-		gl2.glRotated(135, 0, 1, 0);
+		gl2.glRotated(77.13, 0, 1, 0);
 		gl2.glTranslated(0,0,0);
 		Triangle(gl2,1.0f, 1.0f, 0.0f );// zolty
 		gl2.glPopMatrix();
 		
 		gl2.glPushMatrix();
-		gl2.glRotated(180, 0, 1, 0);
+		gl2.glRotated(102.84, 0, 1, 0);
 		gl2.glTranslated(0,0,0);
 		Triangle(gl2,1.0f, 0.0f, 1.0f );// fiolet
 		gl2.glPopMatrix();
 		
 		gl2.glPushMatrix();
-		gl2.glRotated(-45, 0, 1, 0);
+		gl2.glRotated(128.55, 0, 1, 0);
 		gl2.glTranslated(0,0,0);
 		Triangle(gl2,1.0f, 1.0f, 1.0f );// bialy
 		gl2.glPopMatrix();
 		
 		gl2.glPushMatrix();
-		gl2.glRotated(-90, 0, 1, 0);
+		gl2.glRotated(154.26, 0, 1, 0);
 		gl2.glTranslated(0,0,0);
 		Triangle(gl2,0.0f, 0.5f, 0.5f );// darkcyan
 		gl2.glPopMatrix();
 		
 		gl2.glPushMatrix();
-		gl2.glRotated(-135, 0, 1, 0);
+		gl2.glRotated(180, 0, 1, 0);
 		gl2.glTranslated(0,0,0);
 		Triangle(gl2,0.0f, 0.5f, 0.0f );// ciemna zielen
 		gl2.glPopMatrix();
+		
+		gl2.glPushMatrix();
+		gl2.glRotated(-25.71, 0, 1, 0);
+		gl2.glTranslated(0,0,0);
+		Triangle(gl2,1.0f, 0.0f, 0.0f );//czerwony
+		gl2.glPopMatrix();
+		
+		gl2.glPushMatrix();
+		gl2.glRotated(-51.42, 0, 1, 0);
+		gl2.glTranslated(0,0,0);
+		Triangle(gl2,0.0f, 0.0f, 1.0f );// niebieski
+		gl2.glPopMatrix();
+		
+		gl2.glPushMatrix();
+		gl2.glRotated(-77.13, 0, 1, 0);
+		gl2.glTranslated(0,0,0);
+		Triangle(gl2,1.0f, 1.0f, 0.0f );// zolty
+		gl2.glPopMatrix();
+		
+		gl2.glPushMatrix();
+		gl2.glRotated(-102.84, 0, 1, 0);
+		gl2.glTranslated(0,0,0);
+		Triangle(gl2,1.0f, 0.0f, 1.0f );// fiolet
+		gl2.glPopMatrix();
+		
+		gl2.glPushMatrix();
+		gl2.glRotated(-128.55, 0, 1, 0);
+		gl2.glTranslated(0,0,0);
+		Triangle(gl2,1.0f, 1.0f, 1.0f );// bialy
+		gl2.glPopMatrix();
+		
+		gl2.glPushMatrix();
+		gl2.glRotated(-154.26, 0, 1, 0);
+		gl2.glTranslated(0,0,0);
+		Triangle(gl2,0.0f, 0.5f, 0.5f );// darkcyan
+		gl2.glPopMatrix();
+		
 		
 		
 	}
@@ -178,8 +215,8 @@ public class lab5 extends GLJPanel implements GLEventListener, KeyListener{
 		gl2.glColor3f(r,g,b);
 		gl2.glBegin(GL2.GL_POLYGON);
 		gl2.glVertex3d(5, 0.5, 0);
-		gl2.glVertex3d(0, 5, 0);
-		gl2.glVertex3d(3.52, 0.5,3.5);
+		gl2.glVertex3d(0, 7, 0);
+		gl2.glVertex3d(4.5, 0.5, 2.2);
 	    gl2.glEnd ();
 	}
 	
